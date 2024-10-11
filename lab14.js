@@ -1,22 +1,40 @@
+let count = 0;
+var phonenumber = [];
 
 function editName() {
-    const input = document.getElementById("name");
-    const profileName = document.getElementById("profile-name");
-    profileName.textContent = input.value;
-    console.log(input.value);
+    document.getElementById("profile-name").innerHTML = document.getElementById("name").value
+    document.getElementById("name").value = "";
 };
 
 function editImage() {
-    const imageUrlInput = document.getElementById("profile");
-    const profileImage = document.getElementById("profile-img");
-    const url = imageUrlInput.value;
+    document.getElementById('profile-img').src = document.getElementById('profile').value
+    document.getElementById("profile").value = "";
+};
 
-    if (url) {
-        profileImage.src = url;
-        console.log("Image updated to: " + url);
-    } else {
-        alert("Please enter a valid image URL!");
-    }
+function updateRow() {
+    count += 1;
+    const row = document.createElement("tr");
+    const cellNo = document.createElement("td");
+    const cellName = document.createElement("td");
+    const cellTel = document.createElement("td");
+    cellNo.textContent = count;
+    cellName.textContent = document.getElementById("add-name").value;
+    cellTel.textContent = document.getElementById("add-tel").value;
+    row.appendChild(cellNo);
+    row.appendChild(cellName);
+    row.appendChild(cellTel);
+    const table = document.getElementById("my-table");
+    table.appendChild(row);
+
+    let arr = [];
+    arr.push(count);
+    arr.push(document.getElementById("add-name").value);
+    arr.push(document.getElementById("add-tel").value);
+    phonenumber.push(arr);
+    console.log(phonenumber);
+
+    document.getElementById("add-name").value = "";
+    document.getElementById("add-tel").value = "";
 };
 
 function saveCSV() {

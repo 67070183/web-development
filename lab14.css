@@ -15,8 +15,16 @@ header {
     justify-content: center;
     margin-top: 3rem;
 
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    a:hover {
+        color: rgb(32, 122, 233);
+        text-decoration: underline;
+    }
     h1 {
-        margin-bottom: 1rem;
+        margin-bottom: 1rem;;
     }
     .frame {
         position: relative;
