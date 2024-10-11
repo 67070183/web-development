@@ -2,26 +2,25 @@
 function editName() {
     const input = document.getElementById("name");
     const profileName = document.getElementById("profile-name");
-    profileName.textContent = input.value; // Set h1 to the input value
-    console.log(input.value); // Log the input value
-}
+    profileName.textContent = input.value;
+    console.log(input.value);
+};
 
 function editImage() {
-    const imageUrlInput = document.getElementById("profile"); // Get the input field for the image URL
-    const profileImage = document.getElementById("profile-img"); // Get the profile image element
-    const url = imageUrlInput.value; // Get the value (URL) from the input field
+    const imageUrlInput = document.getElementById("profile");
+    const profileImage = document.getElementById("profile-img");
+    const url = imageUrlInput.value;
 
-    // Check if URL is valid before applying it
     if (url) {
-        profileImage.src = url; // Set the image src attribute to the URL value
-        console.log("Image updated to: " + url); // Log the new URL
+        profileImage.src = url;
+        console.log("Image updated to: " + url);
     } else {
-        alert("Please enter a valid image URL!"); // Error handling
+        alert("Please enter a valid image URL!");
     }
-}
+};
 
 function saveCSV() {
-    const csvContent = phonenumber.map(row => row.join(",")).join("\n"); // Convert array to CSV string
+    const csvContent = phonenumber.map(row => row.join(",")).join("\n");
     const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
     const link = document.createElement("a");
     const url = URL.createObjectURL(blob);

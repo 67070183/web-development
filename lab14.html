@@ -21,12 +21,14 @@
 
     <section>
         <div class="set-user">
-            <label>Set the Username</label><input id="name" type="text" placeholder="Enter Username"><button
-                onclick="editName()">set</button>
+            <label>Set the Username</label>
+            <input id="name" type="text" placeholder="Enter Username">
+            <button onclick="editName()">set</button>
         </div>
         <div class="set-image">
-            <label>Set the profile image URL</label><input id="profile" type="text"
-                placeholder="Enter Image URL"><button onclick="editImage()">set</button>
+            <label>Set the profile image URL</label>
+            <input id="profile" type="text" placeholder="Enter Image URL">
+            <button onclick="editImage()">set</button>
         </div>
     </section>
 
@@ -37,6 +39,21 @@
                 placeholder="Tel"><button>ADD</button><button>EXPORT</button>
         </div>
     </section>
+
+    <div class="container">
+        <table>
+            <tr>
+                <th class="table-num">No.</th>
+                <th class="table-name">Name</th>
+                <th class="table-phone">Phone Number</th>
+            </tr>
+            <tr>
+                <td id="number">1</td>
+                <td id="ls-name">pzeed</td>
+                <td id="phone-num">0999999999</td>
+            </tr>
+        </table>
+    </div>
 
     <script src="lab14.js"></script>
 </body>

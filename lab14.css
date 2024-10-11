@@ -80,3 +80,35 @@ section {
     }
 }
 
+.container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+
+    table {
+        .field {
+            background-color: gray;
+        }
+    }
+}
+
+table {
+
+    .table-num {
+        width: 60px;
+    }
+    .table-name {
+        width: 300px;
+    }
+    .table-phone {
+        width: 150px;
+    }
+    th, td {
+        padding: 10px;
+        text-align: left;
+    }
+}
+
+th {
+    background-color: #ccc;
+}
