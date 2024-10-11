@@ -21,8 +21,12 @@ header {
     .frame {
         position: relative;
         border: black solid 1px;
-        border-radius: 50%;
+        /* border-radius: 100%; */
         background-color: bisque;
+        width: 183px;
+        height: 183px;
+        border-radius: 50%;
+        /* border: black solid 1px; */
         .notify{
             display: flex;
             width: 30px;
@@ -40,7 +44,8 @@ header {
     .image {
         width: 183px;
         height: 183px;
-        object-fit: contain;
+        object-fit: cover;
+        border: black solid 1px;
         border-radius: 50%;
     }
 }

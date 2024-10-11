@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="lab14.css">
     <title>itf-lab14</title>
 </head>
+
 <body>
     <header>
         <h1 id="profile-name">สาริน สุขสอน</h1>
         <div class="frame">
             <img class="image" id="profile-img" src="momoi-ai-meme-1024x576.png" alt="image">
-            <div class="notify"><p>1</p></div>
+            <div class="notify">
+                <p>1</p>
+            </div>
         </div>
     </header>
 
     <section>
         <div class="set-user">
-            <label>Set the Username</label><input id="name" type="text" placeholder="Enter Username"><button onclick="editName()">set</button>
+            <label>Set the Username</label><input id="name" type="text" placeholder="Enter Username"><button
+                onclick="editName()">set</button>
         </div>
         <div class="set-image">
-            <label>Set the profile image URL</label><input id="profile" type="text" placeholder="Enter Image URL"><button>set</button>
+            <label>Set the profile image URL</label><input id="profile" type="text"
+                placeholder="Enter Image URL"><button onclick="editImage()">set</button>
         </div>
     </section>
 
     <section style="margin-top: 10px;">
         <h3>Phone Number List</h3>
         <div class="set-phone">
-            <input type="text" placeholder="Name"><input type="text" placeholder="Tel"><button>ADD</button><button>EXPORT</button>
+            <input type="text" placeholder="Name"><input type="text"
+                placeholder="Tel"><button>ADD</button><button>EXPORT</button>
         </div>
     </section>
 
     <script src="lab14.js"></script>
 </body>
+
 </html>
